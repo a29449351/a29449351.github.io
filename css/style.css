@@ -1,0 +1,74 @@
+.outter{
+	height: 300px;
+	border: 1px solid #000;
+}
+.box{
+	width: 200px;
+	height: 200px;
+	background-color: #68a2ff;
+}
+
+/* 1. margin: 0 auto;  */
+.box1{
+	margin: 0 auto;
+}
+/*
+	1.display:block
+	2.margin
+	3.width 要給值
+*/
+
+/* 2. inline 系列 */
+.outter2{
+	text-align: center;
+}
+.outter2 .box{
+	display: inline-block;
+	/*text-align: left;*/
+}
+
+/* 3. flex */
+.outter3{
+
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: center;
+	align-items: center;
+}/*彈性排版*/
+.outter3 .box{
+	/*margin: auto auto;*/
+	/*align-self: center;*/
+	/*align-self: flex-start;*/
+}
+
+/* 4. position: absolute; */
+.outter4{
+	position: relative;
+	/*作為absolute的參考點*/
+}
+.outter4 .box{
+	width: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+
+/* 5. 文字的置中 */
+.box5{
+	margin: auto;
+	text-align: center;
+	font-size: 20px;
+	line-height: 200px;
+	/*行高 若跟區塊一樣大文字考以置中*/
+}
+
+
+
+
+
+
+
+
